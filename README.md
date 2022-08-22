@@ -1,3 +1,5 @@
+ABOUT THE MULTIMETER-ONZEKERHEID-SIMULATIE CODE
+
 In this code the uncertainty for the multimeter will be calculated in the simplest way I saw possible.
 
 the code can be run on every platform that has a library with tkinter in it. Luckily most libraries have tkinter. 
