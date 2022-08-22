@@ -11,3 +11,6 @@ also plays a big role there.
 - And final, you get a last pop-up with what you messured, the fitting uncertainty and the unit in which you messsured.
 
 have fun!
+
+### Bugs in the code
+If you find any bugs or you know where to improve the code, create a new issue or issue a pull-request! All help is welcome.
