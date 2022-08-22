@@ -13,4 +13,4 @@ also plays a big role there.
 have fun!
 
 ### Bugs in the code
-If you find any bugs or you know where to improve the code, create a new issue or issue a pull-request! All help is welcome.
+If you find any bugs or you know where to improve the code, create a new issue or issue a pull-request. But a message in the disccusions wil also do! All help is welcome.
