@@ -421,7 +421,7 @@ class rekenwerk:
 
 class DMM1:
     
-    ws.title("DMM onzekerheid berekenen, door Jort Joris Leroij   Technische Natuurkunde - Delft")
+    ws.title("DMM onzekerheid berekenen, door Jort Joris Leroij   Technische Natuurkunde - hhs Delft")
     ws.geometry("2400x1200")
     ws.config(bg='#5FB691')
     Label(ws, text="de onnauwkeurigheid berekenen van de digitale multimeter", font= ('Helvetica 15 bold')).pack(pady=20)
