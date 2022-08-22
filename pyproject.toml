@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "multimeter_ultra"
+version = "0.1.0"
+description = "This package contains some usefull code for quick analysis of multimeter errors."
+readme = "README.md"
+authors = [{name = "JortJL"}]
+license = {text = "MIT License"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Multimeter analysis"
+]
+dependencies = [
+    "tkinter",
+    'importlib-metadata; python_version<"3.8"',
+]
+
+[tool.setuptools.packages.find]
+where = ["multimeter_ultra"]
