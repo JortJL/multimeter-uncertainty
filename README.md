@@ -1,5 +1,7 @@
 ABOUT THE MULTIMETER-ONZEKERHEID-SIMULATIE CODE
 
+first of all, the digital multimeter this can be used for is the DMM TTi 1604. If you use another multimeter the uncertainties will vary.
+
 In this code the uncertainty for the multimeter will be calculated in the simplest way I saw possible.
 
 the code can be run on every platform that has a library with tkinter in it. Luckily most libraries have tkinter. 
