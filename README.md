@@ -1,4 +1,4 @@
-ABOUT THE MULTIMETER-ONZEKERHEID-SIMULATIE CODE
+ABOUT THE MULTIMETER-UNCERTAINTY-SIMULATION CODE
 
 first of all, the digital multimeter this can be used for is the DMM TTi 1604. If you use another multimeter the uncertainties will vary.
 
