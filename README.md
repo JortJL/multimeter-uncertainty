@@ -10,9 +10,9 @@ know if you messured either AC or DC. Else the results can deffer.
 
 After that you select the unit, kilo, mili, micro etc. 
 
-when you get past that there will be a little pop-up screen asking you how much you messured. voltage AC has two pop-up screens because the Hz on which you messured
+When you get past that there will be a little pop-up screen asking you how much you messured. voltage AC has two pop-up screens because the Hz on which you messured
 also plays a big role there. 
 
-and final, you get a last pop-up with what you messured, the fitting uncertainty and the unit in which you messsured.
+And final, you get a last pop-up with what you messured, the fitting uncertainty and the unit in which you messsured.
 
 have fun!
