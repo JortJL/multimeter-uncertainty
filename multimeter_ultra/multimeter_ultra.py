@@ -1,4 +1,3 @@
-
 from tkinter import*
 from tkinter.ttk import * 
 from tkinter import simpledialog
@@ -6,8 +5,8 @@ from tkinter import messagebox
 from tkinter.messagebox import showinfo
 ws= Tk()
 
-class rekenwerk:
-    
+
+class rekenwerk:   
     def pw_µA_DC():
         ws.title("gemeten waarde")
         C = float(simpledialog.askstring("Input", "hoeveel micro Ampere heb je gemeten?", parent=ws))
@@ -21,7 +20,8 @@ class rekenwerk:
             D = 0.01*C+4*1000
         elif C > 5000000 and C <= 10000000:
             D = 0.03*C+10*1000
-        showinfo('de onzekerheid', 'de onzekerheid bij de gemeten eenheid is: ({}'.format(C) + ' ± {}'.format(D) + ') µA')       
+        showinfo('de onzekerheid', 'de onzekerheid bij de gemeten eenheid is: ({}'.format(C) + ' ± {}'.format(D) + ') µA')    
+        
     def pw_mA_DC():
         ws.title("gemeten waarde")
         C = float(simpledialog.askstring("Input", "hoeveel mili Ampere heb je gemeten?", parent=ws))
@@ -36,6 +36,7 @@ class rekenwerk:
         elif C > 5000 and C <= 10000:
             D = 0.03*C+10*1
         showinfo('de onzekerheid', 'de onzekerheid bij de gemeten eenheid is: ({}'.format(C) + ' ± {}'.format(D) + ') mA')      
+        
     def pw_Am_DC():
         ws.title("gemeten waarde")
         C = float(simpledialog.askstring("Input", "hoeveel Ampere heb je gemeten?", parent=ws))
@@ -51,6 +52,7 @@ class rekenwerk:
             D = 0.03*C+10*0.001
         showinfo('de onzekerheid', 'de onzekerheid bij de gemeten eenheid is: ({}'.format(C) + ' ± {}'.format(D) + ') A')
     
+    
     def pw_µA_AC():
         ws.title("gemeten waarde")
         C = float(simpledialog.askstring("Input", "hoeveel micro Ampere heb je gemeten?", parent=ws))
@@ -65,6 +67,7 @@ class rekenwerk:
         elif C > 5000000 and C <= 10000000:
             D = 0.03*C+4*10000
         showinfo('de onzekerheid', 'de onzekerheid bij de gemeten eenheid is: ({}'.format(C) + ' ± {}'.format(D) + ') µA')      
+        
     def pw_mA_AC():
         ws.title("gemeten waarde")
         C = float(simpledialog.askstring("Input", "hoeveel mili Ampere heb je gemeten?", parent=ws))
@@ -79,6 +82,7 @@ class rekenwerk:
         elif C > 5000 and C <= 10000:
             D = 0.03*C+4*10
         showinfo('de onzekerheid', 'de onzekerheid bij de gemeten eenheid is: ({}'.format(C) + ' ± {}'.format(D) + ') mA')   
+        
     def pw_Am_AC():
         ws.title("gemeten waarde")
         C = float(simpledialog.askstring("Input", "hoeveel Ampere heb je gemeten?", parent=ws))
@@ -94,6 +98,7 @@ class rekenwerk:
             D = 0.03*C+4*0.01
         showinfo('de onzekerheid', 'de onzekerheid bij de gemeten eenheid is: ({}'.format(C) + ' ± {}'.format(D) + ') A')   
     
+    
     def pw_µV_DC():
         ws.title("gemeten waarde")
         C = float(simpledialog.askstring("Input", "hoeveel micro Volt heb je gemeten?", parent=ws))
@@ -108,6 +113,7 @@ class rekenwerk:
         elif C > 400000000 and C <= 1000000000:
                 D = 0.0009*C+4*100000
         showinfo('de onzekerheid', 'de onzekerheid bij de gemeten eenheid is: ({}'.format(C) + ' ± {}'.format(D) + ') µV')       
+        
     def pw_mV_DC():
         ws.title("gemeten waarde")
         C = float(simpledialog.askstring("Input", "hoeveel mili Volt heb je gemeten?", parent=ws))
@@ -122,6 +128,7 @@ class rekenwerk:
         elif C > 400000 and C <= 1000000:
                 D = 0.0009*C+4*100
         showinfo('de onzekerheid', 'de onzekerheid bij de gemeten eenheid is: ({}'.format(C) + ' ± {}'.format(D) + ') mV')      
+        
     def pw_Vm_DC():
         ws.title("gemeten waarde")
         C = float(simpledialog.askstring("Input", "hoeveel Volt heb je gemeten?", parent=ws))
@@ -136,33 +143,7 @@ class rekenwerk:
         elif C > 400 and C <= 1000:
                 D = 0.0009*C+4*0.1
         showinfo('de onzekerheid', 'de onzekerheid bij de gemeten eenheid is: ({}'.format(C) + ' ± {}'.format(D) + ') V')
-    def pw_kV_DC():
-        ws.title("gemeten waarde")
-        C = float(simpledialog.askstring("Input", "hoeveel kilo Volt heb je gemeten?", parent=ws))
-        if C > 0 and C <= 0.0004:
-            D = 0.0008*C+4*0.00000001
-        elif C > 0.0004 and C <= 0.004:
-            D = 0.0008*C+4*0.0000001
-        elif C > 0.004 and C <= 0.04:
-            D = 0.0008*C+4*0.000001
-        elif C > 0.04 and C <= 0.4:
-            D = 0.0008*C+4*0.00001
-        elif C > 0.4 and C <= 1:
-                D = 0.0009*C+4*0.0001
-        showinfo('de onzekerheid', 'de onzekerheid bij de gemeten eenheid is: ({}'.format(C) + ' ± {}'.format(D) + ') kV')
-        ws.title("gemeten waarde")
-        C = float(simpledialog.askstring("Input", "hoeveel mega Volt heb je gemeten?", parent=ws))
-        if C > 0 and C <= 0.0000004:
-            D = 0.0008*C+4*0.00000000001
-        elif C > 0.0000004 and C <= 0.000004:
-            D = 0.0008*C+4*0.0000000001
-        elif C > 0.000004 and C <= 0.00004:
-            D = 0.0008*C+4*0.000000001
-        elif C > 0.00004 and C <= 0.0004:
-            D = 0.0008*C+4*0.00000001
-        elif C > 0.0004 and C <= 0.001:
-                D = 0.0009*C+4*0.0000001
-        showinfo('de onzekerheid', 'de onzekerheid bij de gemeten eenheid is: ({}'.format(C) + ' ± {}'.format(D) + ') MV')
+    
     
     def pw_µV_AC():
         ws.title("Hertz?")
@@ -180,6 +161,7 @@ class rekenwerk:
             elif C > 400000000 and C <= 750000000:
                     D = 0.01*C+4*1000000
             showinfo('de onzekerheid', 'de onzekerheid bij de gemeten eenheid is: ({}'.format(C) + ' ± {}'.format(D) + ') µV') 
+            
         elif C > 400 and C <= 5000:
             C = float(simpledialog.askstring("Input", "hoeveel micro Volt heb je gemeten?", parent=ws))
             if C > 0 and C <= 400000:
@@ -191,6 +173,7 @@ class rekenwerk:
             elif C > 40000000 and C <= 400000000:
                 D = 0.03*C+4*100000 
             showinfo('de onzekerheid', 'de onzekerheid bij de gemeten eenheid is: ({}'.format(C) + ' ± {}'.format(D) + ') µV') 
+            
         elif C > 5000 and C <= 20000:
             C = float(simpledialog.askstring("Input", "hoeveel micro Volt heb je gemeten?", parent=ws))
             if C > 0 and C <= 400000:
@@ -202,6 +185,7 @@ class rekenwerk:
             elif C > 40000000 and C <= 400000000:
                 D = 0.05*C+4*100000 
             showinfo('de onzekerheid', 'de onzekerheid bij de gemeten eenheid is: ({}'.format(C) + ' ± {}'.format(D) + ') µV')   
+            
     def pw_mV_AC():
         ws.title("Hertz?")
         C = float(simpledialog.askstring("Input", "hoeveel Hertz heb je gemeten?", parent=ws))
@@ -240,6 +224,7 @@ class rekenwerk:
             elif C > 40000 and C <= 400000:
                 D = 0.05*C+4*100 
             showinfo('de onzekerheid', 'de onzekerheid bij de gemeten eenheid is: ({}'.format(C) + ' ± {}'.format(D) + ') mV') 
+            
     def pw_Vm_AC():
          ws.title("Hertz?")
          C = float(simpledialog.askstring("Input", "hoeveel Hertz heb je gemeten?", parent=ws))
@@ -255,7 +240,7 @@ class rekenwerk:
                  D = 0.005*C+4*0.1
              elif C > 400 and C <= 750:
                      D = 0.01*C+4*1
-             showinfo('de onzekerheid', 'de onzekerheid bij de gemeten eenheid is: ({}'.format(C) + ' ± {}'.format(D) + ') V') 
+             showinfo('de onzekerheid', 'de onzekerheid bij de gemeten eenheid is: ({}'.format(C) + ' ± {}'.format(D) + ') V')
          elif C > 400 and C <= 5000:
              C = float(simpledialog.askstring("Input", "hoeveel Volt heb je gemeten?", parent=ws))
              if C > 0 and C <= 0.4:
@@ -278,85 +263,11 @@ class rekenwerk:
              elif C > 40 and C <= 400:
                  D = 0.05*C+4*0.1 
              showinfo('de onzekerheid', 'de onzekerheid bij de gemeten eenheid is: ({}'.format(C) + ' ± {}'.format(D) + ') V') 
-    def pw_kV_AC():
-        ws.title("Hertz?")
-        C = float(simpledialog.askstring("Input", "hoeveel Hertz heb je gemeten?", parent=ws))
-        if C > 45 and C <= 400:
-            C = float(simpledialog.askstring("Input", "hoeveel kilo Volt heb je gemeten?", parent=ws))
-            if C > 0 and C <= 0.0004:
-                D = 0.005*C+4*0.0000001
-            elif C > 0.0004 and C <= 0.004:
-                D = 0.005*C+4*0.000001
-            elif C > 0.004 and C <= 0.04:
-                D = 0.005*C+4*0.00001
-            elif C > 0.04 and C <= 0.4:
-                D = 0.005*C+4*0.0001
-            elif C > 0.4 and C <= 0.75:
-                D = 0.01*C+4*0.001
-            showinfo('de onzekerheid', 'de onzekerheid bij de gemeten eenheid is: ({}'.format(C) + ' ± {}'.format(D) + ') kV') 
-        elif C > 400 and C <= 5000:
-            C = float(simpledialog.askstring("Input", "hoeveel kilo Volt heb je gemeten?", parent=ws))
-            if C > 0 and C <= 0.0004:
-                D = 0.01*C+4*0.0000001
-            elif C > 0.0004 and C <= 0.004:
-                D = 0.02*C+4*0.000001
-            elif C > 0.004 and C <= 0.04:
-                D = 0.02*C+4*0.00001
-            elif C > 0.04 and C <= 0.4:
-                D = 0.03*C+4*0.0001
-            showinfo('de onzekerheid', 'de onzekerheid bij de gemeten eenheid is: ({}'.format(C) + ' ± {}'.format(D) + ') kV') 
-        elif C > 5000 and C <= 20000:
-            C = float(simpledialog.askstring("Input", "hoeveel kilo Volt heb je gemeten?", parent=ws))
-            if C > 0 and C <= 0.0004:
-                D = 0.03*C+4*0.0000001
-            elif C > 0.0004 and C <= 0.004:
-                D = 0.03*C+4*0.000001
-            elif C > 0.004 and C <= 0.04:
-                D = 0.05*C+4*0.00001
-            elif C > 0.04 and C <= 0.4:
-                D = 0.05*C+4*0.0001
-            showinfo('de onzekerheid', 'de onzekerheid bij de gemeten eenheid is: ({}'.format(C) + ' ± {}'.format(D) + ') kV')
-        ws.title("Hertz?")
-        C = float(simpledialog.askstring("Input", "hoeveel Hertz heb je gemeten?", parent=ws))
-        if C > 45 and C <= 400:
-            C = float(simpledialog.askstring("Input", "hoeveel Volt heb je gemeten?", parent=ws))
-            if C > 0 and C <= 0.0000004:
-                D = 0.005*C+4*0.0000000001
-            elif C > 0.0000004 and C <= 0.000004:
-                D = 0.005*C+4*0.000000001
-            elif C > 0.000004 and C <= 0.00004:
-                D = 0.005*C+4*0.00000001
-            elif C > 0.00004 and C <= 0.0004:
-                D = 0.005*C+4*0.0000001
-            elif C > 0.0004 and C <= 0.00075:
-                D = 0.01*C+4*0.000001
-            showinfo('de onzekerheid', 'de onzekerheid bij de gemeten eenheid is: ({}'.format(C) + ' ± {}'.format(D) + ') µV') 
-        elif C > 400 and C <= 5000:
-            C = float(simpledialog.askstring("Input", "hoeveel Volt heb je gemeten?", parent=ws))
-            if C > 0 and C <= 0.0000004:
-                D = 0.01*C+4*0.0000000001
-            elif C > 0.0000004 and C <= 0.000004:
-                D = 0.02*C+4*0.000000001
-            elif C > 0.000004 and C <= 0.00004:
-                D = 0.02*C+4*0.00000001
-            elif C > 0.00004 and C <= 0.0004:
-                D = 0.03*C+4*0.0000001
-            showinfo('de onzekerheid', 'de onzekerheid bij de gemeten eenheid is: ({}'.format(C) + ' ± {}'.format(D) + ') mV') 
-        elif C > 5000 and C <= 20000:
-            C = float(simpledialog.askstring("Input", "hoeveel Volt heb je gemeten?", parent=ws))
-            if C > 0 and C <= 0.0000004:
-                D = 0.03*C+4*0.0000000001
-            elif C > 0.0000004 and C <= 0.000004:
-                D = 0.03*C+4*0.000000001
-            elif C > 0.000004 and C <= 0.00004:
-                D = 0.05*C+4*0.00000001
-            elif C > 0.00004 and C <= 0.0004:
-                D = 0.05*C+4*0.0000001
-            showinfo('de onzekerheid', 'de onzekerheid bij de gemeten eenheid is: ({}'.format(C) + ' ± {}'.format(D) + ') V')
+    
     
     def popup_win_mR():
         ws.title("gemeten waarde")
-        C = float(simpledialog.askstring("Input", "hoeveel mili weerstand heb je gemeten?", parent=ws))
+        C = float(simpledialog.askstring("Input", "hoeveel mili Ohm heb je gemeten?", parent=ws))
         if C > 0 and C <= 400000:
             D = 0.0015*C+6*10
         elif C > 400000 and C <= 4000000:
@@ -370,9 +281,10 @@ class rekenwerk:
         elif C > 4000000000 and C <=40000000000:
             D = 0.01*C+10*1000000
         showinfo('de onzekerheid', 'de onzekerheid bij de gemeten eenheid is: ({}'.format(C) + ' ± {}'.format(D) + ') mΩ')
+        
     def popup_win_Rm():
         ws.title("gemeten waarde")
-        C = float(simpledialog.askstring("Input", "hoeveel weerstand heb je gemeten?", parent=ws))
+        C = float(simpledialog.askstring("Input", "hoeveel Ohm heb je gemeten?", parent=ws))
         if C > 0 and C <= 400:
             D = 0.0015*C+6*0.01
         elif C > 400 and C <= 4000:
@@ -386,6 +298,7 @@ class rekenwerk:
         elif C > 4000000 and C <=40000000:
             D = 0.01*C+10*1000
         showinfo('de onzekerheid', 'de onzekerheid bij de gemeten eenheid is: ({}'.format(C) + ' ± {}'.format(D) + ') Ω')
+        
     def popup_win_kR():
         ws.title("gemeten waarde")
         C = float(simpledialog.askstring("Input", "hoeveel kilo Ohm heb je gemeten?", parent=ws))
@@ -402,9 +315,10 @@ class rekenwerk:
         elif C > 4000 and C <=40000:
             D = 0.01*C+10*1
         showinfo('de onzekerheid', 'de onzekerheid bij de gemeten eenheid is: ({}'.format(C) + ' ± {}'.format(D) + ') kΩ')
+        
     def popup_win_MR():  
         ws.title("gemeten waarde")
-        C = float(simpledialog.askstring("Input", "hoeveel kilo Ohm heb je gemeten?", parent=ws))
+        C = float(simpledialog.askstring("Input", "hoeveel Mega Ohm heb je gemeten?", parent=ws))
         if C > 0 and C <= 0.0004:
             D = 0.0015*C+6*0.00000001
         elif C > 0.0004 and C <= 0.004:
@@ -419,8 +333,8 @@ class rekenwerk:
             D = 0.01*C+10*0.001
         showinfo('de onzekerheid', 'de onzekerheid bij de gemeten eenheid is: ({}'.format(C) + ' ± {}'.format(D) + ') MΩ')
 
+        
 class DMM1:
-    
     ws.title("DMM onzekerheid berekenen, door Jort Joris Leroij   Technische Natuurkunde - hhs Delft")
     ws.geometry("2400x1200")
     ws.config(bg='#5FB691')
@@ -450,6 +364,7 @@ class DMM1:
         DMM1.button_µA.pack(pady=10)
         DMM1.button_mA.pack(pady=10)
         DMM1.button_A.pack(pady=10)
+        
     def pw_A_AC():
         DMM1.HOME()  
         DMM1.label2= Label(ws, text="selecteer een grootheid voor het alternating current amperage", font= ('Helvetica 15 bold'))
@@ -475,6 +390,7 @@ class DMM1:
        DMM1.button_µU.pack(pady=10)
        DMM1.button_mU.pack(pady=10)
        DMM1.button_U.pack(pady=10)
+        
     def pw_V_AC():
         DMM1.HOME() 
         DMM1.label2= Label(ws, text="selecteer een grootheid voor het alternating current voltage", font= ('Helvetica 15 bold'))
