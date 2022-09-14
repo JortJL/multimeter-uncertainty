@@ -3,7 +3,7 @@ first of all, the digital multimeter this can be used for is the DMM TTi 1604. I
 In this code the uncertainty for the multimeter will be calculated in the simplest way I saw possible.
 
 
-## first release
+## first release v0.1.0
 the first release is the most basic you can get the app. The interface is quite like chaos. There might even be some grammar mistakes (Am instead of just A for example). But important is that it does the math right. The answers it gives you are correct. Eventho the code is chaotic as well, it does the work without conflict or discussion (mostly).
 
 ### how to use:
@@ -15,9 +15,9 @@ the first release is the most basic you can get the app. The interface is quite 
 
 
 
-## second release
+## second release v0.2.0
 the second release is out!!
-first of all, the interface is way better. it is easier to operate as well and a lot of mistakes have been taken out as well. Not only is the app better, it is also more efficient. If you want to download the raw code you can search for a file called "multimeter_ultra second release" and copy the file.
+first of all, the interface is way better. it is easier to operate as well and a lot of mistakes have been taken out as well. Not only is the app better, it is also more efficient. If you want to download the raw code you can search for a file called "multimeter_ultra second release" and copy the file or go to the release and download a file (tag v0.2.0).
 
 some of the updates are:
 - When you accidentaly enter commas instead of dots it will accept both without trouble.
