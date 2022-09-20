@@ -2,7 +2,6 @@
 first of all, the digital multimeter this can be used for is the DMM TTi 1604. If you use another multimeter the uncertainties will vary.
 In this code the uncertainty for the multimeter will be calculated in the simplest way I saw possible.
 
-
 ## first release v0.1.0
 the first release is the most basic you can get the app. The interface is quite like chaos. There might even be some grammar mistakes (Am instead of just A for example). But important is that it does the math right. The answers it gives you are correct. Eventho the code is chaotic as well, it does the work without conflict or discussion (mostly).
 
@@ -13,11 +12,9 @@ the first release is the most basic you can get the app. The interface is quite 
 - When you get past that there will be a little pop-up screen asking you how much you messured. voltage AC has two pop-   up screens because the Hz on which you messured also plays a big role there. 
 - And final, you get a last pop-up with what you messured, the fitting uncertainty and the unit in which you messsured.
 
-
-
 ## second release v0.2.0
 the second release is out!!
-first of all, the interface is way better. it is easier to operate as well and a lot of mistakes have been taken out as well. Not only is the app better, it is also more efficient. If you want to download the raw code you can search for a file called "multimeter_ultra second release" and copy the file or go to the release and download a file (tag v0.2.0).
+first of all, the interface is way better. it is easier to operate as well and a lot of mistakes have been taken out as well. Not only is the app better, it is also more efficient. If you want to download the raw code you can search for a file called `multimeter_ultra_second_release` and copy the file or go to the release and download a file (tag v0.2.0).
 
 some of the updates are:
 - When you accidentaly enter commas instead of dots it will accept both without trouble.
@@ -33,9 +30,6 @@ some of the updates are:
 - select in what unit you have messured (kilo, mili, micro etc).
 - fill the data in of what you have messured.
 - press the button "bereken" and voíla, it will give you the uncertainty.
-
-
-
 
 ### Bugs in the code
 If you find any bugs or you know where to improve the code, create a new issue or issue a pull-request. But a message in the disccusions wil also do! All help is welcome.
